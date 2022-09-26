@@ -32,7 +32,7 @@ st.set_page_config(layout="wide")
 
 #Image
 image=Image.open("OSB_LOGO.jpg")
-st.image(image,width=True)
+st.image(image,use_column_width=True)
 
 
 # In[12]:
