@@ -31,7 +31,7 @@ st.set_page_config(layout="wide")
 
 
 #Image
-image=Image.open("/Users/user/Desktop/Streamlit project/OSB_LOGO.jpg")
+image=Image.open("OSB_LOGO.jpg")
 st.image(image,use_column_width=True)
 
 
@@ -70,7 +70,7 @@ with data:
     for an efficient and accurate prediction when it comes to estimating a student’s graduate GPA"
     However here we will help you answer all your doubts!
     """)
-    students_data = pd.read_csv("/Users/user/Desktop/Streamlit project/OSB_Graduates.csv")
+    students_data = pd.read_csv("OSB_Graduates.csv")
     
     if st.checkbox("Preview Dataset"):
         number = st.slider("Select No of Rows", 1, students_data.shape[0])
@@ -115,7 +115,7 @@ with Interactive_visu:
     fig.update_layout(width=600,height=400)
     col.write(fig)
     
-    image1=Image.open("/Users/user/Desktop/Streamlit project/students.jpg")
+    image1=Image.open("students.jpg")
     new_image = image1.resize((400, 300))
     img.image(new_image,width=None, caption= "OSB students in a MSBA course")
     
